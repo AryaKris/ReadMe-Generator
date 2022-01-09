@@ -64,7 +64,7 @@ function writeFile(fileName, data) {
     // get that data value containeing
     module.exports;
     fs.writeFile(fileName, data, (err) =>
-        err ? console.log(err) : console.log('Successfully created Readme.md!')
+        err ? console.log(err) : console.log('Successfully created ReadmeGenerator.md!')
     );
 }
 
@@ -75,7 +75,7 @@ function init() {
         .prompt(questions)
         .then((answers) => {
             const data = generateMarkdown(answers);
-            writeFile('README.md', data);
+            writeFile('READMEGenerator.md', data);
         });
 }
 
