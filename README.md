@@ -2,7 +2,7 @@
  ![Github licence](http://img.shields.io/badge/license-MIT-blue.svg)
 
 Creating a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package. 
-This is the name of the project. It describes the whole project in one sentence, and helps people understand what the main goal and aim of the project is.
+
 
 
 ## Description
