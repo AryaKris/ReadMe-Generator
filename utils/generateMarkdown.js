@@ -12,8 +12,8 @@ function renderLicenseSection(license) { }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  console.log("Testing the terminal");
-  return `# ${data.Title}
+  console.log("Testing the terminal", data);
+  `# ${data.Title}
   ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
   ## Description
@@ -39,10 +39,10 @@ ${data.contributors}
 
 ## Tests
 ${data.test}
+`
 
-
-
-`;
+  // create a variable and give the value of the Readme.md file as its value
+  // return the variable from here
 }
 // module.exports is an object we use to store variables or methods
 module.exports = generateMarkdown;
