@@ -13,33 +13,54 @@ function renderLicenseSection(license) { }
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   console.log("Testing the terminal", data);
-  `# ${data.Title}
-  ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+  const readMeGenerator = 
+    `## ${data.title}
+ ![Github licence](http://img.shields.io/badge/license-MIT-blue.sv
 
-  ## Description
-  ${data.Description}
 
-  ## Table of Contents
-  *[Installation](#installation)
+
+## Description
+${data.description}
+
+## Table of Contents 
+
+  * [Installation](#installation)
   * [Usage](#usage)
   * [License](#license)
   * [Contributing](#contributing)
   * [Tests](#tests)
- 
+  * [Questions](#questions)
+
+
 ## Installation
-${data.Installation}
 
-## License
-This project is license under ${data.license}
+ ${data.install}
+
+## Usage
+
+${data.usage}
 
 
-## Contributors 
+## License 
+
+This project is licensed under ${data.license}
+
+
+
+## Contributing
+
 ${data.contributors}
 
-
 ## Tests
-${data.test}
+
+${data.tests}
+
+## Questions
+
+${data.queries}
+
 `
+  return readMeGenerator;
 
   // create a variable and give the value of the Readme.md file as its value
   // return the variable from here

@@ -9,63 +9,75 @@ const questions = [{
     type: 'input',
     message: 'What is your GitHub user name?',
     name: 'username'
-}
-    // ,{
-    //     type: 'input',
-    //     message: 'What is your email address?',
-    //     name: 'email'
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'What is your project title?',
-    //     name: 'title'
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'Please write a short description of your project',
-    //     name: 'Description'
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'What kind of license does your project have?',
-    //     name: 'license'
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'What command should be run to install dependencies?',
-    //     name: 'dependencies'
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'What command should be run to run tests?',
-    //     name: 'tests'
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'What does the user needs to know about contributing to tthe repo?',
-    //     name: 'contribution'
-    // },
+},
+{
+    type: 'input',
+    message: 'What is your email address?',
+    name: 'email'
+},
+{
+    type: 'input',
+    message: 'What is your project title?',
+    name: 'title'
+},
+{
+    type: 'input',
+    message: 'Please write a short description of your project',
+    name: 'description'
+},
+{
+    type: 'input',
+    message: 'What kind of license does your project have?',
+    name: 'license'
+},
+{
+    type: 'input',
+    message: 'How to install and run the project?',
+    name: 'install'
+},
+{
+    type: 'input',
+    message: 'What command should be run to run tests?',
+    name: 'tests'
+},
+{
+    type: 'input',
+    message: 'What does the user needs to know about contributing to tthe repo?',
+    name: 'contributors'
+},
+{
+    type: 'input',
+    message: 'What should the user do in case of additional queries?',
+    name: 'queries'
+},
+{
+    type: 'input',
+    message: 'How to use the project?',
+    name: 'usage'
+},
 
 ];
 
-// fs.writeFile('markDown.md', markDownContent, (err) =>
-//     err ? console.log(err) : console.log('Successfully created markDown.md!'));
 
 // TODO: Create a function to write README file
 function writeFile(fileName, data) {
     // get that data value containeing
     module.exports;
+    fs.writeFile(fileName, data, (err) =>
+        err ? console.log(err) : console.log('Successfully created Readme.md!')
+    );
 }
 
 // TODO: Create a function to initialize app
 function init() {
-  
+
     inquirer
         .prompt(questions)
         .then((answers) => {
-            return generateMarkdown(answers);
+            const data = generateMarkdown(answers);
+            writeFile('README.md', data);
         });
- }
+}
 
 // Function call to initialize app
 init();

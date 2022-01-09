@@ -1,13 +1,10 @@
-## ReadMe Generator
- ![Github licence](http://img.shields.io/badge/license-MIT-blue.svg)
-
-Creating a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package. 
+## Trail Buddy
+ ![Github licence](http://img.shields.io/badge/license-MIT-blue.sv
 
 
 
 ## Description
-
-This application uses node.js. Node.js allows to write server-side code using JavaScript. This application generates a preofessional README.md with the itle of the project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions. It uses the concept of modularization (require() and module.exports), npm and inquirer. This is an interactive command line application which is build using the user inputs. 
+Trail buddy is a website that allows the user to search for trails in their city, and also gives them information on a trail that they choose. This website also pulls from the Open Weather API to show the weather forcast for next 5 days for a selected trail.
 
 ## Table of Contents 
 
@@ -21,11 +18,12 @@ This application uses node.js. Node.js allows to write server-side code using Ja
 
 ## Installation
 
- A user can fork the repo from GitHub and also needs to install Node.js in the local machine. 
+ In this project we tried to execute a design integrating data received from two server-side API requests. We have used the National Park Service (NPS) API and Open Weather API to build this website. One of the major requirement of this project was to use a CSS framework other than Bootstrap. We have used Bulma as a framework API.
 
-## How to use the application. 
+## Usage
 
-Inquirer is an NPM package that provides an easy way to capture user input in your Node.js command line interface applications. This application uses inquirer methods for asking questions and returns the answer by using .then promise function. 
+Trail buddy is a website that allows the user to search for trails in their city, and also gives them information on a trail that they choose. This website also pulls from the Open Weather API to show the weather forcast for next 5 days for a selected trail.
+
 
 ## License 
 
@@ -35,11 +33,13 @@ This project is licensed under MIT
 
 ## Contributing
 
-Please follow the fork and pull Git workflow. 
+Fork and pull Git workflow
 
 ## Tests
-npm test
+
+Go the extra mile and write tests for your application. Then provide code examples and how to run them.
 
 ## Questions
 
-Feel free to contact on any questions realted with this repo at dr.aryakris@outlook.com
+Feel free to contact at dr.aryakris@outlook.com
+
