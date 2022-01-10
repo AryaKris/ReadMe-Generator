@@ -42,4 +42,4 @@ npm test
 
 ## Questions
 
-Feel free to contact on any questions realted with this repo at dr.aryakris@outlook.com
+Feel free to contact on any questions related with this repo at dr.aryakris@outlook.com
