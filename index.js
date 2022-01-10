@@ -57,11 +57,7 @@ const questions = [{
     message: 'What does the user needs to know about contributing to tthe repo?',
     name: 'contributors'
 },
-{
-    type: 'input',
-    message: 'What should the user do in case of additional queries?',
-    name: 'queries'
-},
+
 {
     type: 'input',
     message: 'How to use the project?',
