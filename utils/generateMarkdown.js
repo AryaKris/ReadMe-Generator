@@ -15,7 +15,7 @@ function generateMarkdown(data) {
   console.log("Testing the terminal", data);
   const readMeGenerator = 
     `## ${data.title}
- ![Github licence](http://img.shields.io/badge/license-MIT-blue.svg)
+ ![badge](https://img.shields.io/badge/license-${data.license}-blue)<br />
 
 
 
@@ -57,7 +57,8 @@ ${data.tests}
 
 ## Questions
 
-${data.queries}
+Email me with questions : ${data.email}
+Link to my GitHub Profile : (https://github.com/${data.username})
 
 `
   return readMeGenerator;

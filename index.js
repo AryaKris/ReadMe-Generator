@@ -21,15 +21,27 @@ const questions = [{
     name: 'title'
 },
 {
+    type: "list",
+    name: "license",
+    message: "Choose the appropriate license for this project: ",
+    choices: [
+        "Apache",
+        "Academic",
+        "GNU",
+        "ISC",
+        "MIT",
+        "Mozilla",
+        "Open"
+    ]
+
+
+},
+{
     type: 'input',
     message: 'Please write a short description of your project',
     name: 'description'
 },
-{
-    type: 'input',
-    message: 'What kind of license does your project have?',
-    name: 'license'
-},
+
 {
     type: 'input',
     message: 'How to install and run the project?',
