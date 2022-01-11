@@ -5,7 +5,9 @@ Creating a command-line application that dynamically generates a professional RE
 
 ## Walkthrough Video
 
-![AryaKris README Generator](https://github.com/AryaKris/ReadMe-Generator/blob/main/utils/Readme%20Generator.mov)
+![AryaKris README Generator](./utils/Readme.gif)
+
+Full Link - https://watch.screencastify.com/v/JZObMrmwcfWgeNtnbDPD
 
 
 

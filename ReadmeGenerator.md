@@ -22,7 +22,7 @@ This application uses node.js. Node.js allows to write server-side code using Ja
 
 ## Usage
 
-Inquirer is an NPM package that provides an easy way to capture user input in your Node.js command line interface applications. This application uses inquirer methods for asking questions and returns the answer by using .then promise function.
+nquirer is an NPM package that provides an easy way to capture user input in your Node.js command line interface applications. This application uses inquirer methods for asking questions and returns the answer by using .then promise function.'
 
 
 ## License 
